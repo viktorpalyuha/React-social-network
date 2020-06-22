@@ -1,0 +1,21 @@
+.friends {
+  margin-top: 20px;
+  font-size: 25pt;
+  color: white;
+}
+
+.friendsItems {
+  display: flex;
+  font-size: 12pt;
+  text-align: center;
+}
+
+.friendsItem {
+  margin-left: 10px;
+}
+
+.friendsItem img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

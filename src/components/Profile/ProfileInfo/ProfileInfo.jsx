@@ -5,7 +5,7 @@ const ProfileInfo = (props) => {
   return (
     <div>
         <div>
-            <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" />
+            <img src="https://1.bp.blogspot.com/-8h1PgjBKi24/UCM5Cu1podI/AAAAAAAAAAc/GXwOOptiypY/s1600/nature-wallpaper-hd.jpg" alt=""/>
         </div>
         <div className={classes.descriptionBlock}>
             avat + descript
