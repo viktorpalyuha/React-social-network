@@ -3,15 +3,15 @@ import classes from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
 const MyPosts = (props) => {
-  debugger;
   let postsElements = props.postsData.map( post => <Post message={post.message} likes={post.likes} />);
-
   let newPostElement = React.createRef();
 
-  let addPost = () => {
+  let onPostChange = () => {
+    props.updateNewPostText(newPostElement.current.value);
+  }
 
-    props.addPost(newPostElement.current.value);
-    newPostElement.current.value = "";
+  let addPost = () => {
+    props.addPost();
   }
 
   return (
@@ -20,7 +20,7 @@ const MyPosts = (props) => {
         <h3>My posts</h3>
         <div>
           <div>
-            <textarea ref={newPostElement}></textarea>
+            <textarea onChange={ onPostChange } ref={ newPostElement } value={ props.newPostText }/>
           </div>
           <div>
             <button onClick={addPost}>Add post</button>
